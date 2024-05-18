@@ -78,7 +78,7 @@ Options:
 ```bash
 node stream-example-sox.js
 ```
-
+Make sure you have sox installed in your machine. and if you are using windows then make sure you install **sox version 14.4.1**
 
 # Audio Stream Requirements
 

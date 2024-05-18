@@ -1,7 +1,7 @@
 {
   "name": "bodhi-nodejs-example",
   "version": "0.0.1",
-  "description": "a sample socket connection to bodhi model to demostrate it's capabalities",
+  "description": "a sample socket connection to bodhi model to demonstrate it's capabilities",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
