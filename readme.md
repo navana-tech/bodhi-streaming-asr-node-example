@@ -9,8 +9,8 @@
   - `wss://bodhi.navana.ai`
 
 - **Sample Script:**
-  - `streaming-example.js` (for static audio files)
-  - `stream-example-sox.js` (for static audio files)
+  - `streaming_client.js` (for static audio files)
+  - `streaming_client_with_conversion.js` (for static audio files)
 
 ### Access Token
 
@@ -66,8 +66,9 @@ npm install
 ## Usage
 
 ### Using file
+
 ```bash
-node streaming-example.js -f loan.wav
+node streaming_client.js -f loan.wav
 ```
 
 Options:
@@ -76,9 +77,8 @@ Options:
 ### using mic
 
 ```bash
-node stream-example-sox.js
+node streaming_client_with_conversion.js
 ```
-Make sure you have sox installed in your machine. and if you are using windows then make sure you install **sox version 14.4.1**
 
 # Audio Stream Requirements
 
@@ -88,7 +88,7 @@ To ensure optimal compatibility and performance with our audio processing system
 
 - **Minimum Sample Rate**: The audio must have a sample rate of at least 8000Hz.
 
-- **Fixed Streaming Rate**: Audio packets should be streamed at (chunk_duration_ms) a fixed size (50 - 500 ms), ensuring consistent data flow. We recommend using 100 ms as shown in the example script. 
+- **Fixed Streaming Rate**: Audio packets should be streamed at (chunk_duration_ms) a fixed size (50 - 500 ms), ensuring consistent data flow. We recommend using 100 ms as shown in the example script.
 
 - **Channels**: Audio must be single-channel (Mono) to ensure compatibility with our processing pipeline.
 
